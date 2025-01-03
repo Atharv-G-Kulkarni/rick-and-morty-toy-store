@@ -68,3 +68,21 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+#Building & running podman image
+
+### `podman build -t <image-name> .` builds podman images
+
+### `podman images` to verify the image creation
+
+### `podman run --network bridge -d -p 3000:80 --name <container-name> <image-name>`
+
+### `podman ps` to verify container is running
+
+### `open localhost:3000` to check your running container
+
+### `podman stop -l` to stop latest running container
+
+### `podman rm -l` to remove latest container
+
+### `podman rmi <image-id>/<image-name>` to remove the image with specified name or id
